@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #4203a9, #90bafc);
+  color: #fff;
+  padding: 10px;
+}
+
+.calculator {
+  /* width: 100%; */
+  max-width: 600px;
+  margin: 100px 0px 0px 100px;
+}
+
+.calculator h1 {
+  font-size: 50px;
+  color: #fff;
+}
+.calculator span {
+  color: tomato;
+}
+
+.hero {
+  margin-top: 30px;
+  border-radius: 10px;
+  height: 100px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#input {
+  width: 100%;
+  max-width: 50%;
+  height: 40px;
+  font-size: 20px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  padding: 0px 10px 0px 10px;
+}
+
+#btn {
+  width: 20%;
+  height: 40px;
+  font-size: 20px;
+  border: 0;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  background-color: tomato;
+  color: #fff;
+}
+
+#res {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 20px 0px 0px 30px;
+  margin-top: 30px;
+  height: 50px;
+  display: none;
+}
+
+@media (max-width: 425px) {
+  .container {
+    padding: 20px;
+  }
+
+  .calculator {
+    margin: 50px auto;
+  }
+
+  .calculator h1 {
+    font-size: 32px;
+    margin-left: 70px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #input {
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 100px;
+  }
+
+  #btn {
+    margin: 10px auto;
+    width: 40%;
+  }
+
+  #res {
+    padding: 15px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 30px;
+  }
+
+  .calculator {
+    max-width: 500px;
+    margin: 80px auto;
+  }
+
+  .calculator h1 {
+    margin: auto;
+    font-size: 40px;
+  }
+
+  .hero {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #input {
+    width: 50%;
+    margin: 10px auto;
+  }
+  #btn {
+    width: 30%;
+    margin: 5px auto;
+  }
+
+  #res {
+    padding: 10px;
+  }
+}
